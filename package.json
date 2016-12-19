@@ -1,0 +1,21 @@
+{
+  "name": "46075",
+  "version": "1.0.0",
+  "description": "Realls",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "./"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webdriverio": "^4.5.0"
+  },
+  "devDependencies": {
+    "wdio-mocha-framework": "^0.5.7"
+  }
+}
