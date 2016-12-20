@@ -130,7 +130,12 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/testrunner/reporters.html
-    // reporters: ['dot'],
+    reporters: ['dot','junit'],
+    reporterOptions: {
+        junit: {
+            outputDir: './'
+        }
+    },
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -187,8 +192,9 @@ exports.config = {
     // },
     //
     // Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
-    // afterTest: function (test) {
-    // },
+    afterTest: function (test) {
+        console.log(test.browser);
+    },
     //
     // Hook that gets executed after the suite has ended
     // afterSuite: function (suite) {

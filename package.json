@@ -16,6 +16,7 @@
     "webdriverio": "^4.5.0"
   },
   "devDependencies": {
+    "wdio-junit-reporter": "^0.2.0",
     "wdio-mocha-framework": "^0.5.7"
   }
 }
