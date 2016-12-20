@@ -1,6 +1,7 @@
 var assert = require('assert');
 describe('webdriver.io page', function() {
     it('should have the right title - the fancy generator way', function () {
+    		browser.timeouts('page load', 10000);
         browser.url('http://webdriver.io');
         console.log('SESSION ID');
         console.log(browser.sessionId);
